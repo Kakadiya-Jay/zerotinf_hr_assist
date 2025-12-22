@@ -26,7 +26,7 @@ emailer = EmailSender(
     use_tls=True,
 )
 
-mcp = FastMCP("hr-assist")
+mcp = FastMCP("Zerotinf HRMS Assistant")
 
 
 @mcp.tool()
