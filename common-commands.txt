@@ -1,0 +1,4 @@
+uv init zerotinf-hr-assist
+
+cd .\zerotinf-hr-assist\
+
