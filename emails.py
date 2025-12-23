@@ -74,12 +74,12 @@ if __name__ == "__main__":
     email_sender = EmailSender(
         smtp_server="smtp.gmail.com",
         port=587,
-        username=os.getenv("CB_EMAIL"),
-        password=os.getenv("CB_EMAIL_PWD"),
+        username=os.getenv("WK_EMAIL"),
+        password=os.getenv("WK_EMAIL_APP_PWD"),
         use_tls=True,
     )
     email_sender.send_email(
         subject="Test Email",
         body="This is a test email.",
-        to_emails="add your email here",
+        to_emails="jkakadiya109@gmail.com",
     )

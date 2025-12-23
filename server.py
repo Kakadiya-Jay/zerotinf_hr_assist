@@ -2,6 +2,7 @@ from emails import EmailSender
 from HRMS import *
 from typing import List, Dict, Optional
 from mcp.server.fastmcp import FastMCP
+from datetime import datetime
 
 # load the env
 from dotenv import load_dotenv
@@ -187,7 +188,7 @@ def onboard_new_employee(employee_name: str, manager_name: str):
     - Manager Name: {manager_name}
     Steps to follow:
     - Add the employee to the HRMS system.
-    - Send a welcome email to the employee with their login credentials. (Format: employee_name@atliq.com)
+    - Send a welcome email to the employee with their login credentials. (Format: first_name.last_name@zerotinf.com)
     - Notify the manager about the new employee's onboarding.
     - Raise tickets for a new laptop, id card, and other necessary equipment.
     - Schedule an introductory meeting between the employee and the manager.
